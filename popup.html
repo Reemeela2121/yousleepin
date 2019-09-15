@@ -1,11 +1,51 @@
 <!doctype html>
 <html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  .btn {
+    background-color: #BED7FB;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  div {
+    text-align: center;
+    min-width: 500px;
+  }
+  body {
+    background-color:#FFD9B0;
+    background-image: linear-gradient(90deg, #FFD9B0, #BED7FB);
+    min-width:200px;
+  }
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: #FFD9B0;
+  }
+  </style>
   <head>
-    <title>GTmetrix Analyzer</title>
+    <title> yousleepin?</title>
     <script src="popup.js"></script>
+
   </head>
   <body>
-    <h1>GTmetrix Analyzer</h1>
-    <button id="checkPage">Check this page now!</button>
-  </body>
+      <div class="img">
+          <img src="sheeps.gif" id='sally' width="450" height="200" >
+        </div>
+        <div class="img2">
+          <img src='./usleepin.png' id='logo' width="300" height="100">
+        </div>
+      <div class="button">
+          <button id='15min' style="margin:5px;" onclick="setInterval(func, 3000)">15 Minutes</button>
+
+          <button id='30min' style="margin:5px;" onclick="setInterval(func, 1800000)">30 Minutes</button>
+
+          <button id='60min' style="margin:5px;" onclick="setInterval(func, 3600000)">60 Minutes</button>
+
+          <button id='cancelTimer' style="margin:5px;" onclick="clearInterval(func)">Cancel</button>
+          <div>
+            <br> </br>
+          <a href="work.html" target="_blank" ><button class="btn"><span style='font-size:25px;'>&#128564;</span></button></a>
+    </body>
 </html>

@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>yousleepin?</title>
+			<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    </head>
+    <body>
+    		<div class="img">
+        		<img src='./SHEEPLE.png' id='sally'>
+        	</div>
+        	<div class="img2">
+        		<img src='./usleepin.png' id='logo'>
+        	</div>
+        <div class="button">
+            <button id='15min' style="margin:5px;" onclick="setInterval(func, 3000)">15 Minutes</button>
+
+            <button id='30min' style="margin:5px;" onclick="setInterval(func, 1800000)">30 Minutes</button>
+
+            <button id='60min' style="margin:5px;" onclick="setInterval(func, 3600000)">60 Minutes</button>
+
+            <button id='cancelTimer' style="margin:5px;" onclick="clearInterval(func)">Cancel</button>
+        </div>
+        <script>
+        function func() {
+        window.location.replace("work.html")
+        }
+        </script>
+      </body>
+</html>

@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #415d6f;
+  background-image: url(https://images.unsplash.com/photo-1518887995731-76628177bd6a?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=ca1ef0c90e55cb7586d99f6c2cb40749);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+  color: #ddd;
+}
+body .leaderboard, body .press, body .submit {
+  background: #333;
+  border-radius: 3px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  box-shadow: 0 0 30px RGBa(0, 0, 0, 0.3);
+  min-width: 250px;
+  transition: 0.25s ease;
+}
+body .leaderboard.leaderboard, body .leaderboard.submit, body .press.leaderboard, body .press.submit, body .submit.leaderboard, body .submit.submit {
+  opacity: 0;
+  display: none;
+}
+body .leaderboard.submit, body .press.submit, body .submit.submit {
+  padding: 10px;
+}
+body .leaderboard.submit p, body .press.submit p, body .submit.submit p {
+  font-size: 18px;
+  margin-top: 3px;
+}
+body .leaderboard.submit .input-container, body .press.submit .input-container, body .submit.submit .input-container {
+  position: relative;
+  top: 20px;
+}
+body .leaderboard.submit .input-container input, body .press.submit .input-container input, body .submit.submit .input-container input {
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #555;
+  font-size: 15px;
+  color: #fff;
+  outline: none;
+}
+body .leaderboard.submit .input-container input:focus + label, body .press.submit .input-container input:focus + label, body .submit.submit .input-container input:focus + label {
+  color: #2196F3;
+}
+body .leaderboard.submit .input-container input:focus ~ .line, body .press.submit .input-container input:focus ~ .line, body .submit.submit .input-container input:focus ~ .line {
+  width: 100%;
+}
+body .leaderboard.submit .input-container label, body .press.submit .input-container label, body .submit.submit .input-container label {
+  position: relative;
+  top: -40px;
+  font-size: 14px;
+  font-weight: 100;
+  left: 1px;
+  transition: 0.25s ease;
+}
+body .leaderboard.submit .input-container .line, body .press.submit .input-container .line, body .submit.submit .input-container .line {
+  width: 0;
+  height: 2px;
+  position: relative;
+  background: #1976D2;
+  display: block;
+  top: -20px;
+  margin: 0 auto;
+  transition: 0.25s ease;
+}
+body .leaderboard.submit #submit, body .press.submit #submit, body .submit.submit #submit {
+  margin-top: 10px;
+}
+body .leaderboard h1, body .press h1, body .submit h1 {
+  padding: 10px;
+  font-weight: 100;
+  background: #444;
+  margin: 0 0 10px 0;
+}
+body .leaderboard .list, body .press .list, body .submit .list {
+  padding: 10px;
+}
+body .leaderboard .list .user, body .press .list .user, body .submit .list .user {
+  font-family: 'Open Sans', sans-serif;
+  padding: 5px;
+  font-size: 18px;
+}
+body .leaderboard .list .user .score, body .press .list .user .score, body .submit .list .user .score {
+  position: relative;
+  top: 3px;
+  float: right;
+  font-size: 15px;
+  color: #aaa;
+}
+body .leaderboard .list .user .num, body .press .list .user .num, body .submit .list .user .num {
+  padding: 5px;
+  background: RGBa(0, 0, 0, 0.1);
+  width: 40px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 10px;
+}
+body .leaderboard button, body .press button, body .submit button {
+  display: block;
+  background: #333;
+  width: 100%;
+  color: #eee;
+  border: none;
+  font-size: 15px;
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+}
+body .leaderboard button::after, body .press button::after, body .submit button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: RGBa(0, 0, 0, 0.1);
+  width: 0;
+  height: 100%;
+  transition: 0.25s ease;
+}
+body .leaderboard button:hover::after, body .press button:hover::after, body .submit button:hover::after {
+  width: 100%;
+}
+body .leaderboard button:active::after, body .press button:active::after, body .submit button:active::after {
+  background: RGBa(0, 0, 0, 0.2);
+}
+body .leaderboard .info, body .press .info, body .submit .info {
+  padding: 10px;
+  font-size: 18px;
+}
+body .leaderboard .info .score, body .press .info .score, body .submit .info .score {
+  float: right;
+}

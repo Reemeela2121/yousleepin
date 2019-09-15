@@ -1,0 +1,37 @@
+
+<link type="text/css" rel="stylesheet" href="style.css">
+<link type="text/css" rel="stylesheet" href="RMXmYr.scss.css">
+<script src="one.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/6.6.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#reserved-urls -->
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+<div class="press" id="t1">
+  <h1>How fast are you?</h1>
+  <div class="info">Time:
+    <span id="time">10</span>s
+    <span class="score">Score:
+      <span id="score">0</span>
+    </span>
+  </div>
+  <button id="start"><i class="fa fa-bullseye"></i> Click here</button>
+</div>
+<div class="submit" id="t2">
+  <p>You got a score of <span id="score2"></span></p>
+  <div class="input-container">
+    <input type="text" id="username" />
+    <label>Enter username</label>
+    <span class="line"></span>
+  </div>
+  <button id="submit"><i class="fa fa-check"></i> Submit</button>
+  <button id="skip"><i class="fa fa-forward"></i> Skip</button>
+</div>
+<div class="leaderboard" id="t3">
+  <h1><i class="fa fa-trophy"></i> Top 10</h1>
+  <div id="list" class="list">Loading...</div>
+  <button id="reload"><i class="fa fa-undo"></i> Replay</button>
+</div>

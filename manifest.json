@@ -1,15 +1,17 @@
 {
   "manifest_version": 2,
 
-  "name": "GTmetrix Analyzer Plugin",
-  "description": "This extension will analyze a page using GTmetrix",
+  "name": "yousleepin? plugin",
+  "description": "This extension will analyze your fatigue",
   "version": "1.0",
-
+  "storage": {
+    "managed_schema": "schema.json"
+  },
   "browser_action": {
    "default_icon": "icon.png",
    "default_popup": "popup.html"
   },
-  "permissions": [
+  "permissions": {
    "activeTab"
-   ]
+ }
 }

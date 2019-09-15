@@ -1,0 +1,27 @@
+.button {
+        background-color: #ffdf9a;
+        border: 20px;
+        border-color: black;
+        color: black;
+        width: 20%;
+        padding: 3%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        text-align: center;
+    }
+img .sally {
+		display:block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 26%;
+		background-color: #ffdf9a;
+}
+img .logo {
+		float: right;
+		display:block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 26%;
+		background-color: #ffdf9a;
+}
